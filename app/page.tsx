@@ -819,9 +819,9 @@ function MCPBeamsSection({ onHover, onLeave }: { onHover: () => void; onLeave: (
 }
 
 const PROJECT_TYPES = [
-  { value: "fullstack", label: "Product Builds"},
-  { value: "enterprise", label: "AI Integration"},
-  { value: "consult",   label: "Consultation"},
+  { value: "fullstack",  label: "Product Builds",  sub: "MVP → production" },
+  { value: "enterprise", label: "AI Integration",  sub: "MCP & workflow automation" },
+  { value: "consult",    label: "Consultation",    sub: "Architecture & code review" },
 ] as const;
 
 function ContactForm({ onHover, onLeave }: { onHover: () => void; onLeave: () => void }) {
